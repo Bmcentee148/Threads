@@ -11,6 +11,6 @@ public class LambdaTaskDemo {
 
 		//create thread and task
 		Thread thread = new Thread( () -> System.out.println("Hello, World!"));
-		thread.run(); //run thread
+		thread.start(); //signify thread is ready to run
 	}
 }
