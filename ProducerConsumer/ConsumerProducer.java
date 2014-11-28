@@ -67,6 +67,7 @@ public class ConsumerProducer {
 				}
 
 				queue.offer(val); //place val at tail end of queue
+				System.out.println("Queue Size: " + queue.size());
 				notEmpty.signal(); //Signal notEmpty condition
 			} catch(InterruptedException ex) 	{
 				ex.printStackTrace();
